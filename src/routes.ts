@@ -1,0 +1,11 @@
+import { Router, Request, Response } from "express";
+
+const router = Router();
+
+router.get("/", (request: Request, response: Response) => {
+    response.status(200).json({
+        test: "ok!"
+    });
+});
+
+export { router };
